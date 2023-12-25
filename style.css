@@ -1,0 +1,110 @@
+@font-face {
+    font-family:Hanson ;
+    src: url(./fonts/Hanson-Bold.ttf);
+}
+@font-face {
+    font-family:"Clash Display" ;
+    src: url(./fonts/ClashDisplay-Variable.ttf);
+}
+
+
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.bg .img {
+    background: url(image/bgmi-giant-helmet-on-beach-0ipmyx5uizu0e5p7\ 1.png);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+}
+.overlay1 {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: #17FF13;
+    mix-blend-mode: darken;
+}
+.overlay2{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    background: rgba(0, 0, 0, 0.77);
+    top: 0;
+    left: 0;
+}
+h1{
+    font-family: Hanson;
+    font-size: 64px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    background: linear-gradient(183deg, #16FF11 65.9%, #066104 113.54%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    text-align: center;
+    z-index: 999;
+}
+
+h3 {
+    color: #FFF;
+    font-family: "Clash Display";
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    text-align: center;
+    z-index: 99;
+}
+
+
+
+table{
+    border-collapse: collapse;
+    border: 2px solid #16FF12;
+    margin: 25px 0;
+    color: #000;
+    font-family: "Clash Display";
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    text-align: left;
+    padding: 8px;
+    z-index: 999;
+
+}
+table th {
+    background-color: #16FF12;
+
+}
+thead tr {
+    text-align: left;
+}
+table,th,td {
+    padding: 1rem;
+}
+tbody td {
+    color: #FFF;
+}

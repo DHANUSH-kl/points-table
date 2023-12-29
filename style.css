@@ -108,3 +108,6 @@ table,th,td {
 tbody td {
     color: #FFF;
 }
+.center-align{
+    text-align: center;
+}

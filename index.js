@@ -1,13 +1,19 @@
 
 let sheetID = "1xw6Ys86lywnOErf655WfBfPPF8X0lMLAx-G2i5zKRUQ";
-let sheetTitle ="Sample sheet";
+let sheetTitle ="Rewio Points Table";
 let sheetRange ="A1:F100";
 let sheetUrl = ('https://docs.google.com/spreadsheets/d/' + sheetID + '/gviz/tq?sheet=' + sheetTitle + '&range=' + sheetRange);
 let positionNumber = 1;
-fetch(sheetUrl).then(res => res.text()).then(rep => {
-    let data = JSON.parse(rep.substr(47).slice(0,-2));
+
+fetch(sheetUrl)
+  .then(res => res.text())
+  .then(rep => {
+    let data = JSON.parse(rep.substr(47).slice(0, -2));
     assignValues(data);
   })
+  .catch(err => {
+    console.error("Fetch Error:", err);
+  });
 
   function assignValues(data, table) {
     const rowObj = data.table.rows;

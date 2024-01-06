@@ -1,7 +1,7 @@
 
 let sheetID = "1xw6Ys86lywnOErf655WfBfPPF8X0lMLAx-G2i5zKRUQ";
 let sheetTitle ="Rewio Points Table";
-let sheetRange ="A1:F100";
+let sheetRange ="A2:F100";
 let sheetUrl = ('https://docs.google.com/spreadsheets/d/' + sheetID + '/gviz/tq?sheet=' + sheetTitle + '&range=' + sheetRange);
 let positionNumber = 1;
 

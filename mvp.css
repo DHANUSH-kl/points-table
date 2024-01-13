@@ -142,6 +142,9 @@ tbody td {
         margin-top: -0.4rem;
         text-align: center;
     }
+    .trophy {
+        display: none;
+    }
 }
 @media(max-width:700px){
     .heading h1 {
@@ -154,11 +157,7 @@ tbody td {
     table {
         font-size: 10px;
     }
-    .trophy {
-        transform: scale(0.6);
-        left: 0.2rem;
-        top: 1rem;
-    }
+
     .right{
         gap: 2rem;
         margin-top: 12rem;

@@ -112,8 +112,15 @@ table{
     padding: 8px !important;
     z-index: 999 !important;
 }
-table th {
-    background-color: #16FF12 !important;
+table td {
+    background-color: transparent !important;
+    color: white !important;
+    padding: 1.5rem !important;
+    border: 2px solid #16FF12 !important;
+    font-size: 1rem !important;
+    font-family: Hanson !important;
+    text-align: center !important;
+
 }
 thead tr {
     text-align: left !important;
@@ -144,6 +151,10 @@ tbody td {
     }
     .trophy {
         display: none;
+    }
+    table td {
+        font-size: 0.6rem !important;
+        text-align: center !important;
     }
 }
 @media(max-width:700px){
